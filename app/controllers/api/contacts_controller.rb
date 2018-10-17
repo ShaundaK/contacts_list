@@ -16,11 +16,22 @@ class Api::ContactsController < ApplicationController
     render "show.json.jbuilder"
   end
 
-  # def destroy
-  #   @product_id = params[:id]
-  #   @product = Product.find_by(id: product_id)
-  #   @product.destry
-  #   render "destroy.json.jbuilder"
+  def update
+    @contact = Contact.find_by(id: params[:id])
+    @contact.update(
+      first_name: params[:input_first_name],
+      last_name: params[:input_last_name],
+      email: params[:input_email],
+      phone_number: params[:input_phone_number],
+      )
+    render "show.json.jbuilder"
+  end
+
+  def destroy
+    @product_id = params[:id]
+    @product = Product.find_by(id: product_id)
+    @product.destry
+    render "destroy.json.jbuilder"
 end
 
 
