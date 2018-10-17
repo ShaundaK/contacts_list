@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+
+
 contact1 = Contact.new({first_name: "Sharon", last_name: "Lee", email:"slee@gmail.com", phone_number: 100})
 contact1.save
 
