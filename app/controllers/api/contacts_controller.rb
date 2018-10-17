@@ -28,10 +28,11 @@ class Api::ContactsController < ApplicationController
   end
 
   def destroy
-    @product_id = params[:id]
-    @product = Product.find_by(id: product_id)
-    @product.destry
+    contact_id = params[:id]
+    @contact = Contact.find_by(id: contact_id)
+    @contact.destroy
     render "destroy.json.jbuilder"
 end
+end 
 
 
