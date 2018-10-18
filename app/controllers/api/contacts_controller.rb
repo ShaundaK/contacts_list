@@ -32,7 +32,7 @@ class Api::ContactsController < ApplicationController
     @contact = Contact.find_by(id: contact_id)
     @contact.destroy
     render "destroy.json.jbuilder"
-end
+  end
 end 
 
 
