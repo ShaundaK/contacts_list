@@ -9,11 +9,11 @@
 
 
 
-contact1 = Contact.new({first_name: "Sharon", last_name: "Lee", email:"slee@gmail.com", phone_number: 100})
+contact1 = Contact.new({first_name: "Sharon", middle_name: "Leslie" last_name: "Lee", email:"slee@gmail.com", phone_number: 100})
 contact1.save
 
-contact2 = Contact.new({first_name: "Bill", last_name: "Stevens", email:"bstevens@gmail.com", phone_number: 200})
+contact2 = Contact.new({first_name: "Bill", middle_name: "Cole" last_name: "Stevens", email:"bstevens@gmail.com", phone_number: 200})
 contact2.save
 
-contact3 = Contact.new({first_name: "Lucy", last_name: "Brown", email:"lbrown@gmail.com", phone_number: 300})
+contact3 = Contact.new({first_name: "Lucy", middle_name: "Kitty" last_name: "Brown", email:"lbrown@gmail.com", phone_number: 300})
 contact3.save
