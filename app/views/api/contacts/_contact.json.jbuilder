@@ -7,3 +7,4 @@ json.email contact.email
 json.phone_number contact.phone_number
 json.updated_at contact.updated_at
 json.friendly_updated_at contact.friendly_updated_at
+json.japanese_phone_number contact.japanese_phone_number
