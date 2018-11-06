@@ -25,4 +25,17 @@ class ContactsController < ApplicationController
   def new
     render "new.html.erb"
   end
+
+  def edit
+    @contact = Contact.find_by(id: params[:id])
+    render 'edit.html.erb'
+  end
+
+  def update
+    @contact = Contact.find_by(id: params[:id])
+    @contact.email = params[:email] || @contact.email
+    @contact.phone_number = params[:phone_number] || @contact.phone_number
+    @contact.save!
+    redirect_to "/contacts"
+  end
 end
