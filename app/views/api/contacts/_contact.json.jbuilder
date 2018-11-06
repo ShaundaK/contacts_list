@@ -9,3 +9,4 @@ json.updated_at contact.updated_at
 json.friendly_updated_at contact.friendly_updated_at
 json.japanese_phone_number contact.japanese_phone_number
 json.user_info current_user
+json.groups contact.groups

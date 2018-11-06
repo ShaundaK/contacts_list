@@ -3,6 +3,11 @@ class Api::ContactsController < ApplicationController
     p 'current_user'
     p current_user
     @contacts = Contact.all
+  
+  # if params[:input_group]
+  #   group_name = params[:input_group]
+  #   group = Group.find_by(name: group_name)
+  #   @contacts = contac
     render "index.json.jbuilder"
   end
 
