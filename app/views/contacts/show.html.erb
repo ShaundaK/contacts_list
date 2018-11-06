@@ -8,3 +8,5 @@
   <p>email: <%= @contact.email %></p>
   <p>phone number: <%= @contact.phone_number %></p>
   <hr>
+
+  <a href="/contacts/<%= @contact.id %>" data-method="delete" rel="nofollow">Delete the contact</a>
